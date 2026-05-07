@@ -1,4 +1,3 @@
-import os
 import pandas as pd
 from sqlalchemy import create_engine
 import numpy as np
@@ -6,11 +5,11 @@ import numpy as np
 # ==========================================
 # 0. DATABASE CONNECTION SETUP
 # ==========================================
-# Render will securely pass this URL to the script
-db_url = os.environ.get("DATABASE_URL")
+# Paste your newly copied External Database URL right here inside the quotes
+DATABASE_URL = "postgresql://db_nako_user:IrwPFnSfzWmyU8Qa4koG6Lvig4gizbM3@dpg-d7tvsm7avr4c73d57tug-a.singapore-postgres.render.com/db_nako_thhy"
 
 # Create the SQLAlchemy engine
-engine = create_engine(db_url)
+engine = create_engine(DATABASE_URL)
 
 
 # ==========================================
